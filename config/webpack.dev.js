@@ -6,7 +6,7 @@ var APP_DIR = path.join(__dirname, '..', 'app');
 module.exports = {
   debug: true,
   devtool: 'eval',
-  entry: ['webpack-hot-middleware/client', './app/index.tsx'],
+  entry: './app/index.tsx',
   module: {
     preLoaders: [{
       test: /\.tsx?$/,
@@ -25,7 +25,6 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
   resolve: {

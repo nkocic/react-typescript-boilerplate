@@ -7,6 +7,7 @@
     "build:webpack": "NODE_ENV=production webpack --config config/webpack.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "clean": "rimraf build",
+    "init": "npm install && tsd install",
     "start": "node dev_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
   "devDependencies": {
     "express": "^4.13.4",
     "react-transform-catch-errors": "^1.0.2",
+    "rimraf": "^2.5.2",
     "tslint": "^3.7.4",
     "tslint-loader": "^2.1.3",
     "ts-loader": "^0.8.2",

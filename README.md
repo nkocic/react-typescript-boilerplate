@@ -3,14 +3,9 @@ Typescript + React + Webpack Boilerplate
 
 Base project for setting up a frontend application using Typescript and React. Heavily based off of Dan Abramov's [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate).
 
-Prerequisites
-----------------------------------
-* Typescript Definition Manager (TSD) `npm install -g tsd`
-
 Installation
 --------------------------------------
-* npm install
-* tsd install
+* npm run init
 
 Running the Dev Server
 --------------------------------------
