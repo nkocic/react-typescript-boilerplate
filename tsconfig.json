@@ -1,8 +1,41 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "jsx": "preserve",
-    "experimentalDecorators": true
-  },
-  "exclude": ["node_modules", "config", "dev_server.js"]
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noLib": false,
+        "jsx": "react",
+        "rootDir": "app",
+        "outDir": "out"
+    },
+    "exclude": [
+        "node_modules",
+        "config",
+        "dev_server.js"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**",
+        "!release/**"
+    ],
+    "files": [
+        "app/actions.ts",
+        "app/reducers.ts",
+        "app/types.d.ts",
+        "typings/react-redux/react-redux.d.ts",
+        "typings/react/react-dom.d.ts",
+        "typings/react/react.d.ts",
+        "typings/redux/redux.d.ts",
+        "typings/tsd.d.ts",
+        "app/components/app.tsx",
+        "app/components/counter_list.tsx",
+        "app/components/counter.tsx",
+        "app/index.tsx"
+    ]
 }

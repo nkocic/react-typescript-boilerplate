@@ -6,23 +6,17 @@ import { connect } from 'react-redux';
 import { incrementCounter, decrementCounter, addCounter } from '../actions';
 import { CounterList } from './counter_list';
 
-interface IAppState {
+interface IStateProps {
   counters: number[];
 }
 
-interface IAppProps {
-  dispatch?: (func: any) => void;
-  counters?: number[];
+interface IDispatchProps {
+  dispatch: (func: any) => void;
 }
 
-function select(state: { counters: number[] }): IAppState {
-  return {
-    counters: state.counters,
-  };
-}
+type IProps = IStateProps & IDispatchProps;
 
-@connect(select)
-export class App extends React.Component<IAppProps, {}> {
+class App extends React.Component<IProps, {}> {
   public render(): React.ReactElement<{}> {
     const { dispatch, counters }: any = this.props;
 
@@ -37,3 +31,17 @@ export class App extends React.Component<IAppProps, {}> {
     );
   }
 }
+
+function mapStateToProps(state: IState, ownProps: {}): IStateProps {
+  return {
+    counters: state.counters,
+  };
+}
+
+function mapDispatchToProps(dispatch: Redux.Dispatch): IDispatchProps {
+  return {
+    dispatch: dispatch,
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

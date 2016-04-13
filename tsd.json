@@ -6,16 +6,16 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "react-redux/react-redux.d.ts": {
-      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+      "commit": "641df27e73ca67fa7199a3deedae104198d41a17"
     },
     "react/react-dom.d.ts": {
-      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+      "commit": "641df27e73ca67fa7199a3deedae104198d41a17"
     },
     "redux/redux.d.ts": {
-      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+      "commit": "641df27e73ca67fa7199a3deedae104198d41a17"
     },
     "react/react.d.ts": {
-      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+      "commit": "641df27e73ca67fa7199a3deedae104198d41a17"
     }
   }
 }
