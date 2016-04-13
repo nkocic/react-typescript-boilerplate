@@ -1,5 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
-
 export enum ACTION { IncrementCounter, DecrementCounter, AddCounter }
 
 export interface ICounterAction {
